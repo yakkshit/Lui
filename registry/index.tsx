@@ -30,12 +30,12 @@ const ui: Registry = {
   },
   "flickering-grid": {
     name: "flickering-grid",
-    type: "components:ui",
+    type: "components:magicui",
     files: ["registry/components/magicui/flickering-grid.tsx"],
   },
   "hero-video-dialog": {
     name: "hero-video-dialog",
-    type: "components:ui",
+    type: "components:magicui",
     files: ["registry/components/magicui/hero-video-dialog.tsx"],
   },
   marquee: {
@@ -246,7 +246,7 @@ const ui: Registry = {
   },
   "pulsating-button": {
     name: "pulsating-button",
-    type: "components:ui",
+    type: "components:magicui",
     files: ["registry/components/magicui/pulsating-button.tsx"],
   },
   "file-tree": {
@@ -258,6 +258,16 @@ const ui: Registry = {
     name: "blur-fade",
     type: "components:magicui",
     files: ["registry/components/magicui/blur-fade.tsx"],
+  },
+  safari: {
+    name: "safari",
+    type: "components:magicui",
+    files: ["registry/components/magicui/safari.tsx"],
+  },
+  "iphone-15-pro": {
+    name: "iphone-15-pro",
+    type: "components:magicui",
+    files: ["registry/components/magicui/iphone-15-pro.tsx"],
   },
 };
 
@@ -951,6 +961,38 @@ const example: Registry = {
     files: ["registry/components/example/blur-fade-text-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/example/blur-fade-text-demo"),
+    ),
+  },
+  "safari-demo": {
+    name: "safari-demo",
+    type: "components:example",
+    files: ["registry/components/example/safari-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/safari-demo"),
+    ),
+  },
+  "safari-demo-2": {
+    name: "safari-demo-2",
+    type: "components:example",
+    files: ["registry/components/example/safari-demo-2.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/safari-demo-2"),
+    ),
+  },
+  "iphone-15-pro-demo": {
+    name: "iphone-15-pro-demo",
+    type: "components:example",
+    files: ["registry/components/example/iphone-15-pro-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/iphone-15-pro-demo"),
+    ),
+  },
+  "iphone-15-pro-demo-2": {
+    name: "iphone-15-pro-demo-2",
+    type: "components:example",
+    files: ["registry/components/example/iphone-15-pro-demo-2.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/iphone-15-pro-demo-2"),
     ),
   },
 };
